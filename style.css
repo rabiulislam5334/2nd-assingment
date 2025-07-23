@@ -1,1 +1,100 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.noto-serif-inter {
+  font-family: "Noto Serif", serif;
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+h5 {
+  font-family: "Noto Serif", serif;
+  color: rgb(0, 0, 0);
+}
+p {
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f8ff;
+}
+.img-width {
+  width: 100%;
+}
+/* header */
+header {
+}
+.navbar {
+  margin-top: 30px;
+}
+.navbar ul {
+  align-items: center;
+}
+.navbar li a {
+  font-size: 1rem;
+}
+.navbar li:nth-child(1) a {
+  font-weight: 700;
+}
+.navbar li:nth-child(4) a {
+  font-weight: 400;
+}
+.navbar li:nth-child(2) a,
+.navbar li:nth-child(3) a {
+  font-weight: 400;
+  color: rgb(137, 135, 161);
+}
+/* banner */
+.banner {
+  margin-top: 200px;
+}
+.banner-left {
+  flex: 1;
+  align-items: end;
+}
+.banner-right {
+  flex: 1;
+}
+.banner-left h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+.banner-left h1 span {
+  color: rgb(233, 90, 8);
+}
+
+/* mobile responsive */
+@media screen and (max-width: 576px) {
+  .nav-list {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .navbar,
+  .banner-left {
+    margin: 50px 16px;
+  }
+  .banner-left h1 {
+    font-size: 1.5rem;
+  }
+  .banner-left p {
+    font-size: 0.88rem;
+    margin-top: 10px;
+  }
+  .navbar img {
+    width: 63px;
+    height: 38px;
+  }
+}

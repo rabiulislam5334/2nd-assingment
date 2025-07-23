@@ -11,9 +11,39 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <header>
-      <nav></nav>
+  <body class="noto-serif-inter">
+    <header class="container">
+      <nav class="navbar flex justify-between">
+        <img src="./assets/logo.png" alt="" />
+        <ul class="flex gap-x-16">
+          <li class="nav-list"><a href="">Home</a></li>
+          <li class="nav-list"><a href="">Shop</a></li>
+          <li class="nav-list"><a href="">About us </a></li>
+
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-cart-shopping icon"></i> Cart ($56)</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="banner flex">
+        <div class="banner-left flex">
+          <div>
+            <h1>
+              ALWAYS <span>FRESH <br />FLOWERS</span>
+            </h1>
+            <p>
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh flowers that are perfect for any occasion.
+            </p>
+          </div>
+        </div>
+        <div class="banner-right">
+          <img src="./assets/hero-flower.png" alt="" class="img-width" />
+        </div>
+      </div>
     </header>
     <body></body>
     <footer></footer>
