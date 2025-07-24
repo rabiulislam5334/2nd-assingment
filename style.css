@@ -127,7 +127,9 @@ header {
   font-weight: 600;
 }
 /* flower */
-
+.flower {
+  margin-top: 220px;
+}
 .flower-img {
   flex: 1;
 }
@@ -176,6 +178,7 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
+
   /* border: 1px solid red; 
   position: absolute;
   margin: 0;
@@ -300,7 +303,7 @@ header {
   display: inline-block;
 }
 .newslatter input {
-  padding-right: 300px;
+  padding-right: 270px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -319,6 +322,51 @@ header {
   align-items: center;
   flex-direction: column;
 }
+/* footer-list */
+.footer-end {
+  margin-top: 50px;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+}
+.footer-logo {
+  flex: 1;
+}
+.footer-logo img {
+  margin-bottom: 20px;
+}
+.footer-list1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.footer-list1 ul li,
+.footer-list2 ul li {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-list1 ul li {
+  margin-bottom: 30px;
+}
+.footer-list2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+
+  flex: 1;
+}
+.footer-icon img {
+  width: 100px;
+  height: 30px;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   .nav-list {
@@ -326,7 +374,9 @@ header {
   }
   .banner {
     flex-direction: column-reverse;
+    margin-top: 50px;
   }
+
   .navbar,
   .banner-left {
     margin: 50px 16px;
@@ -343,8 +393,8 @@ header {
     margin-top: 10px;
   }
   .navbar img {
-    width: 63px;
-    height: 38px;
+    width: 65px;
+    height: 40px;
   }
   .product-card {
     grid-template-columns: repeat(2, 1fr);
@@ -362,14 +412,16 @@ header {
   }
   .card p,
   .card h4,
-  .card button {
+  .card button,
+  .footer-logo p {
     font-size: 1rem;
   }
 
   .badge-logo {
     display: none;
   }
-  .flower-plant {
+  .flower-plant,
+  .footer-end {
     flex-direction: column;
     gap: 30px;
     margin: 0 16px;
@@ -409,5 +461,28 @@ header {
   .footer-form {
     margin-top: 100px;
     padding: 100px 0;
+  }
+  .footer-list1,
+  .footer-list2 {
+    justify-content: start;
+    align-items: start;
+  }
+  .footer-icon {
+    gap: 20px;
+  }
+  .footer-icon img {
+    width: 36px;
+    height: 36px;
+  }
+  .footer-end {
+    margin: 50px 30px;
+    gap: 10px;
+  }
+  .footer-logo img {
+    width: 180px;
+    height: 110px;
+  }
+  .flower {
+    margin-top: 60px;
   }
 }
